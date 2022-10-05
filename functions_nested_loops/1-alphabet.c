@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- * main - display de alphabet in lower and upper case with putchar
+ * print_alphabet - display de alphabet in lower and upper case with putchar
+ * 
  * Return: always 0 (success)
+ *
 */
 
 void print_alphabet(void)
