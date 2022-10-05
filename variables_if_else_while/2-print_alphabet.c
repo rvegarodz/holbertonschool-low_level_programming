@@ -12,11 +12,4 @@ int main(void)
 		putchar(az);
 		putchar('\n');
 		return 0;	
-	/**
-		*int strt = 0;
-		*for (char az = 'a'; (strt != EOF) && (az != 'z'); az++)
-		*strt = putchar(az);
-		*putchar('\n');
-		*return(0);
-	*/
 }
