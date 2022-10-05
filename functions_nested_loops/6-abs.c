@@ -4,9 +4,7 @@
  * @r: number to estimate
  * Return: always 0 (success)
  */
-int _abs(int)
+int _abs(int x)
 {
-	int r;
-
-	return r*(((r>0)<<1)-1);
+	return x*(((x>0)<<1)-1);
 }
