@@ -6,5 +6,7 @@
  */
 int _abs(int)
 {
-	return r*((r>0)<<1)-1);
+	int r;
+
+	return r*(((r>0)<<1)-1);
 }
