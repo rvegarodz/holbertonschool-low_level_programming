@@ -7,9 +7,16 @@
 
 int main(void)
 {
-	int strt = 0;
-	for (char az = 'a'; (strt != EOF) && (az != 'z'); az++)
-	strt = putchar(az);
-	putchar('\n');
-	return(0);
+	
+	for (int az = 'a'; az <= 'z'; az++)
+		putchar(az);
+		putchar('\n');
+		return 0;	
+	/**
+		*int strt = 0;
+		*for (char az = 'a'; (strt != EOF) && (az != 'z'); az++)
+		*strt = putchar(az);
+		*putchar('\n');
+		*return(0);
+	*/
 }
