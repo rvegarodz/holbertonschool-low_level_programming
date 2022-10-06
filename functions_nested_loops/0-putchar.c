@@ -1,9 +1,8 @@
 #include "main.h"
-/*
+/**
  *main - using function with header
  *Return: always 0 (success)
 */
-
 int main(void)
 {
 	_putchar('_');
