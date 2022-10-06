@@ -1,10 +1,8 @@
 #include <stdio.h>
-
 /**
  * main - display de alphabet in lower and upper case with putchar
  * Return: always 0 (success)
 */
-
 int main(void)
 {
 	int n;
@@ -17,6 +15,5 @@ int main(void)
 		putchar(' ');
 	}
 	putchar('\n');
-	
-	return 0;	
+	return 0;
 }
