@@ -14,7 +14,7 @@ void print_hashtag(int size)
 	}
 	else
 	{
-		for (i = 0; i < size, i++)
+		for (i = 0; i < size; i++)
 		{
 			for (j = 0; j <= i; j++)
 			{
