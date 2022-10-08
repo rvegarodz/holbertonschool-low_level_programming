@@ -22,7 +22,10 @@ void fizz_buzz(int num)
 			printf("Fizz");
 		else
 			printf("%d", i);
-		putchar(' ');
+		if (i = num)
+			putchar('\n');
+		else
+			putchar(' ');
 	}
-	putchar('\n');
+	
 }
