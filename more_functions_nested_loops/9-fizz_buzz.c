@@ -10,13 +10,15 @@ int main(void)
 
 void fizz_buzz(int num)
 {
-	for (num = 0; num <= 100; num++)
+	int i;
+
+	for (i = 0; i <= num; i++)
 	{
-		if (num % 15 == 0)
-			printf("Fizz Buzz ");
-		else if (num % 5 == 0)
+		if (i % 15 == 0)
+			printf("FizzBuzz ");
+		else if (i % 5 == 0)
 			printf("Buzz ");
-		else if (num % 3 == 0)
+		else if (i % 3 == 0)
 			printf("Fizz ");
 		else
 			printf("%d ", num);
