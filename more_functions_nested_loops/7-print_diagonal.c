@@ -1,8 +1,7 @@
 #include "main.h"
 /**
  * print_diagonal - print char
- * @i: number of time
- * @j: number of times
+ * @n: number of time
  */
 void print_diagonal(int n)
 {
