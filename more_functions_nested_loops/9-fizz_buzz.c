@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * fizz_buzz - prints number and mark multiples
+ * main - run fizz_buzz
  * @num: limit of print
- * @i: number to print
  * Return: alwasy 0 (success)
  */
 void fizz_buzz(int num);
@@ -31,6 +31,5 @@ void fizz_buzz(int num)
 			putchar('\n');
 		else
 			putchar(' ');
-	}
-	
+	}	
 }
