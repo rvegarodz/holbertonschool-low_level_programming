@@ -10,8 +10,6 @@ int main(void)
 
 void fizz_buzz(int num)
 {
-	int num;
-
 	for (num = 0; num <= 100; num++)
 	{
 		if (num % 15 == 0)
