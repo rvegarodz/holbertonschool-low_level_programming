@@ -21,7 +21,7 @@ void fizz_buzz(int num)
 		else if (i % 3 == 0)
 			printf("Fizz ");
 		else
-			printf("%d ", num);
+			printf("%d ", i);
 	}
 	printf("\n");
 }
