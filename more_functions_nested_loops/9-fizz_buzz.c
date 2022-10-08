@@ -1,10 +1,14 @@
 #include <stdio.h>
-/**
- *
- *
- *
- */
-int main(void)
+
+void fizz_buzz(int num);
+
+int main(void);
+{
+	fizz_buzz(100);
+	return (0);
+}
+
+void fizz_buzz(int num)
 {
 	int num;
 
