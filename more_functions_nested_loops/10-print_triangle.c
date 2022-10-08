@@ -6,7 +6,7 @@
 void print_triangle(int size)
 {
 	int i, j, z;
-	int count = num;
+	int count = size;
 
 	if (size <= 0)
 	{
