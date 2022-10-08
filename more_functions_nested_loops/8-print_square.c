@@ -1,8 +1,7 @@
 #include "main.h"
 /**
  * print_square - print hashtag
- * @i: num of print by line
- * @j: num of print
+ * @size: num to print
  */
 void print_square(int size)
 {
