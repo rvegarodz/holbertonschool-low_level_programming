@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- *
- *
- *
+ * print_diagonal - print char
+ * @i: number of time
+ * @j: number of times
  */
 void print_diagonal(int n)
 {
-	int i,j;
+	int i, j;
 
 	if (n <= 0)
 	{
