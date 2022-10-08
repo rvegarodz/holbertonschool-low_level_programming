@@ -12,7 +12,7 @@ void fizz_buzz(int num)
 {
 	int i;
 
-	for (i = 0; i <= num; i++)
+	for (i = 1; i <= num; i++)
 	{
 		if (i % 15 == 0)
 			printf("FizzBuzz ");
