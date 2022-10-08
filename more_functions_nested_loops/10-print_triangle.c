@@ -6,6 +6,7 @@
 void print_triangle(int size)
 {
 	int i, j, z;
+	int count = num;
 
 	if (size <= 0)
 	{
@@ -14,18 +15,15 @@ void print_triangle(int size)
 	else
 		for (i = 1; i <= size; i++)
 		{
-			if (size == i)
+			for (j = 1; j < count; j++)
+			{
+				_putchar(' ');
+			}
+			for (z = 1; z <= i; z++)
 			{
 				_putchar('#');
 			}
-			for (j = 1; j < size; j++)
-			{
-				for (z = 1; z == j; z++)
-				{
-					_putchar('#');
-				}
-				_putchar(' ');
-			}
+			count--
 			_putchar('\n');
 		}
 }
