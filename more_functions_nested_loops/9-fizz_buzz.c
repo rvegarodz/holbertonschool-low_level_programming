@@ -2,7 +2,7 @@
 
 void fizz_buzz(int num);
 
-int main(void);
+int main(void)
 {
 	fizz_buzz(100);
 	return (0);
