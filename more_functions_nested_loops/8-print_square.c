@@ -4,7 +4,7 @@
  * @i: num of print by line
  * @j: num of print
  */
-void print_hashtag(int size)
+void print_square(int size)
 {
 	int i, j;
 
