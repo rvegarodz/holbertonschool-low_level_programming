@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - run fizz_buzz
+ * fizz_buzz - print number and identify multiples
  * @num: limit of print
  * Return: alwasy 0 (success)
  */
