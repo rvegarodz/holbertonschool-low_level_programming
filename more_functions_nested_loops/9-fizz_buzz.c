@@ -1,5 +1,10 @@
 #include <stdio.h>
-
+/**
+ * fizz_buzz - prints number and mark multiples
+ * @num: limit of print
+ * @i: number to print
+ * Return: alwasy 0 (success)
+ */
 void fizz_buzz(int num);
 
 int main(void)
