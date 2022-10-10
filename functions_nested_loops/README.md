@@ -13,6 +13,9 @@
 - File 10 - Function that adds two integers and returns the result
 - File 11 - Function that prints all natural number from n to 98
 
+- _putchar - Function that print a char
+- main.h - Header file that contains all the function created
+
 ### Resources to read or watch:
 
 - [C - Functions](https://www.tutorialspoint.com/cprogramming/c_functions.htm)
