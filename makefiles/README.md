@@ -1,4 +1,4 @@
-# Files created to Make Project
+# Files created to Makefiles Project
 
 - File 0 - Makefile that compile file as school
 - File 1 - Makefile that compile file
