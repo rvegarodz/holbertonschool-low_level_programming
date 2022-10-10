@@ -11,3 +11,7 @@
 - File 8 - Prototype that prints a square
 - File 9 - Program that prints the numbers from 1 - 100 but replace the multiplies of 3, 5 and 15
 - File 10 - Prototype that prints a triangle 
+<br/>
+
+- _putchar - Function that print a char
+- main.h - Header file that contains all the function created
