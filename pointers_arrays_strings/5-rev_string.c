@@ -15,7 +15,7 @@ void rev_string(char *s)
 	}
 	j = i - 1;
 	
-	char rev[string_lenght] = *s;
+	char rev['string_lenght'] = *s;
 	
 	while (j >= 0)
 	{
