@@ -6,11 +6,10 @@
  */
 int _strlen(char *s)
 {
-	char count[] = "%s" &s;
+	int count = 0;
 	int i;
 	
-	for (i = 0; count[i] != '\0'; ++i);
-	
-	_putchar(i);
-	return 0;
+	for (i = 0; s[i] != '\0'; ++i);
+		count++;
+	return (count);
 }
