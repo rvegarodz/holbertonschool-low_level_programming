@@ -4,14 +4,14 @@
  *
  *
  */
-void print_rev(char *s)
+void _puts(char *str)
 {
-	int count = '\0';
+	int i = 0;
 
-	while (s[count] == 0)
+	while (str[i] != '\0')
 	{
-		_putchar(s[count]);
-		count--;
+		_putchar(str[i]);
+		i++;
 	}
 	_putchar('\n');
 }
