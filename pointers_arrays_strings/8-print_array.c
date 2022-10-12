@@ -7,9 +7,11 @@
  */
 void print_array(int *a, int n)
 {
-	int y;
+	int y, min;
 
-	for (y = 0; y < n; y++)
+	min = n - 1
+
+	for (y = 0; y <= n; y++)
 	{
 		if (y < n)
 		{
