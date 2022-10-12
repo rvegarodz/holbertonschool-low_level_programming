@@ -6,6 +6,7 @@
 void rev_string(char *s)
 {
 	int i, j, z, temp;
+	
 	i = 0, j = 0, z = 0;
 
 	while (s[i] != '\0')
@@ -13,7 +14,6 @@ void rev_string(char *s)
 		i++;
 	}
 	j = i - 1;
-	
 
 	while (z < j)
 	{
