@@ -7,7 +7,8 @@
  */
 void print_array(int *a, int n)
 {
-	int y, min;
+	int y;
+	int min;
 
 	min = n - 1;
 
