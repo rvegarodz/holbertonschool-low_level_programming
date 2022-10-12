@@ -18,6 +18,10 @@ void print_array(int *a, int n)
 		{
 			min = 0;
 		}
+		else if (a[y] == '\0')
+		{
+			min = 0;
+		}
 		else if (y < min)
 		{
 			printf("%d, ", a[y]);
