@@ -12,9 +12,9 @@ void print_array(int *a, int n)
 
 	min = n - 1;
 
-	for (y = 0; y <= n; y++)
+	for (y = 0; y <= min; y++)
 	{
-		if (y < n)
+		if (y < min)
 		{
 			printf("%d, ", a[y]);
 		}
