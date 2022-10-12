@@ -21,6 +21,8 @@ void rev_string(char *s)
 		temp = s[z];
 		s[z] = s[j];
 		s[j] = temp;
+		z++;
+		j--;
 	}
 	_putchar('\n');
 }
