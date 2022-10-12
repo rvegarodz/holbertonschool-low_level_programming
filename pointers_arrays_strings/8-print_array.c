@@ -12,7 +12,7 @@ void print_array(int *a, int n)
 
 	min = n - 1;
 
-	for (y = 0; y <= min; y++)
+	for (y = 0; y >= 0 <= min; y++)
 	{
 		if (y < min)
 		{
@@ -23,10 +23,6 @@ void print_array(int *a, int n)
 		{
 			printf("%d\n", a[y]);
 		}
-	if (n <= 0)
-	{
-		printf("\n");
-	}
 	}
 
 
