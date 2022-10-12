@@ -8,30 +8,14 @@
 void print_array(int *a, int n)
 {
 	int y;
-	int min;
 
-	min = n - 1;
-
-	for (y = 0; y <= min; y++)
+	for (y = 0; y < n; y++)
 	{
-		if (n <= 0)
+		printf("%d", a[y]);
+		if (y < (n - 1))
 		{
-			min = 0;
-		}
-		else if (a[y] == '\0')
-		{
-			min = 0;
-		}
-		else if (y < min)
-		{
-			printf("%d, ", a[y]);
-		}
-		
-		else
-		{
-			printf("%d\n", a[y]);
+			printf(", ", a[y]);
 		}
 	}
-
-
+	putchar('\n');
 }
