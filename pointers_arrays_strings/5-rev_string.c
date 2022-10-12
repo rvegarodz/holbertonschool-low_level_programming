@@ -5,9 +5,9 @@
  */
 void rev_string(char *s)
 {
-	int i, j, z, temp;	
-	i = 0, j = 0, z = 0;
+	int i, j, z, temp;
 
+	i = 0, j = 0, z = 0;
 	while (s[i] != '\0')
 	{
 		i++;
