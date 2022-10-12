@@ -9,7 +9,7 @@ void print_array(int *a, int n)
 {
 	int y, min;
 
-	min = n - 1
+	min = n - 1;
 
 	for (y = 0; y <= n; y++)
 	{
