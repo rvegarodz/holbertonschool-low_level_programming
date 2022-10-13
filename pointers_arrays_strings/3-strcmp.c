@@ -13,12 +13,12 @@ int _strcmp(char *s1, char *s2)
 
 	for (i = 0; s1[i] != '\0' && s2[i] != '\0'; i++)
 	{
-		if (a[i] != b[i])
+		if (s1[i] != s2[i])
 		{
 			flag = 1;
 		}
 	}
-	if (a[i] != '\0' || b[i] != '\0')
+	if (s1[i] != '\0' || s2[i] != '\0')
 		return 1;
 	if (flag == 0)
 		return (0);
