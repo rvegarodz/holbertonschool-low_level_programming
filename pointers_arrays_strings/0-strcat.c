@@ -5,7 +5,7 @@
  * @src: second array
  * Return: pointer to dest (success)
  */
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src)
 {
 	int len, i;
 
