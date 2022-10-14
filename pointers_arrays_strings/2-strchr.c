@@ -19,7 +19,7 @@ char *_strchr(char *s, char c)
 			_putchar('N');
 			_putchar('U');
 			_putchar('L');
-			_putchar('L')
+			_putchar('L');
 		}
 	}
 	return (0);
