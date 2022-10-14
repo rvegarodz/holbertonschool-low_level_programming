@@ -12,14 +12,12 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			_putchar(s[i]);
-		}
-		else if (s[i] != c)
-		{
-			_putchar('N');
-			_putchar('U');
-			_putchar('L');
-			_putchar('L');
+			while (s[i] != '\0')
+			{
+				_putchar(s[i]);
+				i++;
+			}
+			return (0);
 		}
 	}
 	return (0);
