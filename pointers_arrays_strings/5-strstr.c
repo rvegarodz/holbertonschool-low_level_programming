@@ -6,45 +6,25 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int len, mv1, mv2, count;
-
-	mv2 = 0;
-	count = 0;
+	int n, j;
 	
-	/* Length of the pointer needle */
-	for (len = 0; needle[len] != '\0'; )
-	{
-		len++;
-	}
+	if (needle[0] == '\0')
+		return (haystack);
 
-	/* Length of th pointer needle without null byte */
-	len = len - 1;
-
-	/* Comparison between pointers */
-	for (mv1 = 0; haystack[mv1] != '\0'; )
+	for (n = 0; haystack[n] != '\0'; n++)
 	{
-		if (haystack[mv1] == needle[mv2])
+		if (haystack[n] == needle[0])
 		{
-			while (haystack[mv1] == needle[mv2] && needle[mv2] <= needle[len])
+			for (j = 0 ; needle[j] != '\0'; j++)
 			{
-				mv1++;
-				mv2++;
-				count++;
+				if (haystack[n + j] != needle[j])
+				{
+					break;
+				}
 			}
-			if (haystack[mv1] != needle[mv2])
-			{
-				mv2 = 0;
-				count = 0;
-			}
-			else if (needle[mv2] > needle[len])
-				return (haystack + (mv1 - mv2));
-		}
-		else
-		{
-			mv1++;
-			mv2 = 0;
-			count = 0;
+		if (needle[j] == '\0')
+			return (haystack + n);
 		}
 	}
-	return (0);
+	return ('\0');
 }
