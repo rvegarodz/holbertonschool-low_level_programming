@@ -37,10 +37,14 @@ char *_strstr(char *haystack, char *needle)
 				count = 0;
 			}
 			else if (needle[mv2] > needle[len])
-				return ( haystack + (mv1 - mv2));
+				return (haystack + (mv1 - mv2));
 		}
 		else
+		{
 			mv1++;
+			mv2 = 0;
+			count = 0;
+		}
 	}
 	return (0);
 }
