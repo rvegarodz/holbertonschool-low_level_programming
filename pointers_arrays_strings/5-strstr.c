@@ -11,16 +11,16 @@ char *_strstr(char *haystack, char *needle)
 	mv2 = 0;
 	count = 0;
 	
-	// Length of the pointer needle
+	/* Length of the pointer needle */
 	for (len = 0; needle[len] != '\0'; )
 	{
 		len++;
 	}
 
-	// Length of th pointer needle without null byte
+	/* Length of th pointer needle without null byte */
 	len = len - 1;
 
-	// Comparison between pointers
+	/* Comparison between pointers */
 	for (mv1 = 0; haystack[mv1] != '\0'; )
 	{
 		if (haystack[mv1] == needle[mv2])
@@ -37,7 +37,7 @@ char *_strstr(char *haystack, char *needle)
 				count = 0;
 			}
 			else if (needle[mv2] > needle[len])
-				return (haystack[mv1 - mv2])
+				return ( haystack + (mv1 - mv2));
 		}
 		else
 			mv1++;
