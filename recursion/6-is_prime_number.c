@@ -22,5 +22,5 @@ int primes(int n, int i)
 	else
 		return (1);
 	i++;
-	return (is_prime_number(n));
+	return (is_prime_number(n))
 }
