@@ -19,6 +19,7 @@ int primes(int n, int i)
 		return (1);
 	if (n % i == 0)
 		return (0);
-	i++;
-	return is_prime_number(n);
+	else
+		i++;
+		return is_prime_number(n);
 }
