@@ -4,7 +4,7 @@
  * @root: root value of n
  * @n: value to analize
  * Return: sqrt_root (success)
- */ 
+ */
 int sqrt_root(int root, int n);
 
 int _sqrt_recursion(int n)
