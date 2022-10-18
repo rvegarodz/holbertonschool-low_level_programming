@@ -13,7 +13,7 @@ int is_prime_number(int n)
 
 int primes(int n, int i)
 {
-	if (n == 0 || n == 1)
+	if (n <= 0 || n == 1)
 		return (0);
 	if (n == i)
 		return (1);
