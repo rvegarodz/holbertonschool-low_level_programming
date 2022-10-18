@@ -2,6 +2,7 @@
 /**
  * is_prime_number - identify if a number is prime
  * @n: number to analyze
+ * @i: number 2
  * Return: 1 if its prime (success)
  */
 int primes(int n, int i);
