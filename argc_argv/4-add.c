@@ -8,7 +8,9 @@
  */
 int main(int argc, char *argv[])
 {
-        int i, j, sum_base, sum;
+        int i, sum;
+
+	i = 1;
 
         if (argc == 1)
         {
@@ -17,20 +19,14 @@ int main(int argc, char *argv[])
         }
 	else
 	{
-		i = 1;
-		j = 2;
-		sum_base = atoi(argv[i]) + atoi(argv[j]);
-		
-		if (argc > j)
+		if (argc > i)
                 {
-			j++;
-			for ( ; j < argc; j++)
+			for (i = 1; i < argc; i++)
                         {
-				sum = sum_base + atoi(argv[j]);
-				sum_base = sum;
+				sum += atoi(argv[i]);
 			}
                 }
-                printf("%d\n", sum_base);
+                printf("%d\n", sum);
 		return (0);
         }
 }
