@@ -15,7 +15,7 @@ char *str_concat(char *s1, char *s2)
 	unsigned int length2 = strlen(s2);
 	unsigned int i, j;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL && s2 == NULL)
 		return (NULL);
 	array = malloc(length1 + (length2 + 1));
 	if (array == NULL)
@@ -29,5 +29,6 @@ char *str_concat(char *s1, char *s2)
 		array[length1] = s2[j];
 		length1++;
 	}
+	array[length1] = '\0';
 	return (array);
 }
