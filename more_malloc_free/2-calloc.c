@@ -9,33 +9,27 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *ptr1;
 	char *ptr2;
-	unsigned int i;
+	unsigned int *ptr1, i;
 
-	if (nmemb == 0)
-		return (NULL);
-	if (size == 0)
+	if (nmemb == 0 || size == 0)
 		return (NULL);
 	if (size == sizeof(char))
 	{
 		ptr2 = malloc(nmemb * size);
 		if (ptr2 == NULL)
-		{
-			free(ptr2);
 			return (NULL);
-		}
-		for (i = 0; i <= (nmemb * size); i++)
+		for (i = 0; i < nmemb; i++)
 			ptr2[i] = '0';
 		return (ptr2);
 	}
-	ptr1 = malloc(nmemb * size);
-	if (ptr1 == NULL)
+	else
 	{
-		free(ptr1);
-		return(NULL);
+		ptr1 = malloc(nmemb * size);
+		if (ptr1 == NULL)
+			return(NULL);
+		for (i = 0; i < nmemb; i++)
+			ptr1[i] = 0;
+		return (ptr1);
 	}
-	for (i = 0; i<= (nmemb * size); i++)
-		ptr1[i] = 0;
-	return (ptr1);
 }
