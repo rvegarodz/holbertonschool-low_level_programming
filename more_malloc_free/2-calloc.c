@@ -3,9 +3,10 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- *
- *
- *
+ * _calloc - allocates memory for an array
+ * @nmemb: elements to be allocated
+ * @size: bytes per elements
+ * Return: pointer to array (success)
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -27,7 +28,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		ptr1 = malloc(nmemb * size);
 		if (ptr1 == NULL)
-			return(NULL);
+			return (NULL);
 		for (i = 0; i < nmemb; i++)
 			ptr1[i] = 0;
 		return (ptr1);
