@@ -25,4 +25,11 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
  * @d: pointer to struct variable
  */
 void print_dog(struct dog *d);
+/**
+ * new_dog - function that creates a newi
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
+ */
+dog_t *new_dog(char *name, float age, char *owner);
 #endif
