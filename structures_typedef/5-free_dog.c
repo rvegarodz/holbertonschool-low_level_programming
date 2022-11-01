@@ -2,9 +2,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- *
- *
- *
+ * free_dog - free malloc created
+ * @d: pointer to struct
  */
 void free_dog(dog_t *d)
 {
