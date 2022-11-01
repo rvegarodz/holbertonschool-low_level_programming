@@ -3,9 +3,11 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- *
- *
- *
+ * new_dog - create new struct variable
+ * @name: first member of struct
+ * @age: second member of struct
+ * @owner: third member of struct
+ * Return: pointer to new struct variable (success)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
