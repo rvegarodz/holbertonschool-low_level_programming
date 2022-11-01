@@ -32,4 +32,9 @@ void print_dog(struct dog *d);
  * @owner: owner of the dog
  */
 dog_t *new_dog(char *name, float age, char *owner);
+/**
+ * free_dog - free malloc created
+ * @d; pointer to struct
+ */
+void free_dog(dog_t *d);
 #endif
