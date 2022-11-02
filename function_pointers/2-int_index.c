@@ -2,8 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *
- *
+ * int_index - function that searches for an integer
+ * @array: array of integers
+ * @size: length of array
+ * @cmp: pointer to function
+ * Return: result of function (success)
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
