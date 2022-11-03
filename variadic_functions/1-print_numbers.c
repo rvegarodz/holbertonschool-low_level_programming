@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- *
- *
- *
+ * print_numbers - function that prints numbers
+ * @separator: string to be printed
+ * @n: number of integers passed to function
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
