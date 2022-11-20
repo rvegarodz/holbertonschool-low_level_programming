@@ -1,6 +1,6 @@
 #include "main.h"
-/*
- * read_textfile - function that read a file
+/**
+ * read_textfile - function that read a file and print it to POSIX STDIO
  * @filename: name of the file to read
  * @letters: number of letter to read
  * Return: number of letters to read and print
