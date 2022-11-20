@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- * read_text - function that read a file
+ * read_textfile - function that read a file
  * @filename: name of the file to read
  * @letters: number of letter to read
  * Return: number of letters to read and print
@@ -24,7 +24,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	r = read(i, fp, letters);
 	fp[letters + 1] = '\0';
-	write(1, fp, r);
+	write(STDOUT_FILENO, fp, r);
 	close(i);
 	return (r);
 }
