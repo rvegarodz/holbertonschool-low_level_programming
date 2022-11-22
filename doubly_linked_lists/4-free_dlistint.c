@@ -7,10 +7,6 @@ void free_dlistint(dlistint_t *head)
 {
 	dlistint_t *tailnode = head;
 
-	if (tailnode->next == NULL)
-	{
-		free(head);
-	}
 	while (tailnode->next != NULL)
 	{
 		tailnode = tailnode->next;
