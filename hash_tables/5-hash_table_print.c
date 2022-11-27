@@ -1,29 +1,48 @@
 #include "hash_tables.h"
 /**
- * hash_table_print - print hash table
+ * hash_table_print - print a hash table
  * @ht: pointer to hash table
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned long int i;
-	hash_node_t *node;
+	unsigned long int i, j;
+	const hash_table_t *index;
+	hash_node_t *tmp;
 
 	if (ht == NULL)
-	{
 		return;
-	}
-	printf("{");
-	for (i = 0; i < ht->size; i++)
+
+	index = ht;
+
+	for (i = 0, j = 0; i < ht->size; i++)
 	{
-		node = ht->array[i];
-		if (node != NULL)
+		if (ht->array[i] != NULL)
 		{
-			printf("'%s' : '%s'", node->key, node->value);
-		}
-		if (i + 1 != ht->size)
-		{
-			printf(", ");
+			index->array[j] = ht->array[i];
+			j++;
 		}
 	}
-	printf("}\n");
+	for (i = 0; i < j; i++)
+	{
+		tmp = index->array[i];
+		if (i == 0)
+			printf("{");
+		if (index->array[i]->next == NULL)
+		{
+			printf("'%s': '%s'", index->array[i]->key, ht->array[i]->value);
+			if (i < j - 1)
+				printf(", ");
+			else
+				printf("}\n");
+		}
+		if (index->array[i]->next != NULL)
+		{
+			while (tmp)
+			{
+				printf("'%s': '%s'", tmp->key, tmp->value);
+				printf(", ");
+				tmp = tmp->next;
+			}
+		}
+	}
 }
