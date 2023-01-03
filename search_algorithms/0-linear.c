@@ -5,11 +5,12 @@
  * @array: pointer to the first element of the array
  * @size: number of elements in array
  * @value: value to search for
- * Return: index where value is located (success) or -1 if value is not present or is NULL
+ * Return: index where value is located (success) or -1 (failed)
  */
 int linear_search(int *array, size_t size, int value)
 {
 	unsigned long int i = 0;
+
 	while (i < size)
 	{
 		if (array[i] != value)
