@@ -4,7 +4,7 @@
  * using binary search algorithm
  * @array: pointer to first element
  * @size: number of elements in array
- * value: value to search
+ * @value: value to search
  * Return: index where value is located (success) or -1 (failure)
  **/
 int binary_search(int *array, size_t size, int value)
