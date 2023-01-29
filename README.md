@@ -1,4 +1,4 @@
-# Files created to Low Level Programming Projects (1st month)
+# Files created to Low Level Programming Projects
 
 ### Hello World project focus on:
 - Intro to C 
